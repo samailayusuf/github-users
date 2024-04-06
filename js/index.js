@@ -16,7 +16,7 @@ function loadData () {
     }
 
     //event.preventDefault();
-    var url = `https://api.github.com/search/users?q=location:${location}+language:${language}&sort=desc&page=1&per_page=24`;
+    var url = `https://api.github.com/search/users?q=location:${location}+language:${language}&page=1&per_page=24`;
     var stringContent = '';
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {

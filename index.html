@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Github Cards</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Top coders in the city!</h1>
+        <section>
+            <input type="text" placeholder="Enter a city e.g Lagos" id="location" required/>
+            <input  type="text" placeholder ="Enter a Language e.g PHP" id="language"  required/>
+            <button id="submit-button" onclick="loadData()">Search</button>
+            <br/>
+        </section>
+        <section class="error-message">
+            <p>Inputs are required!</p>
+        </section> 
+    </header>
+
+    <section id="loader">
+        <img src="img/loading.gif"/>
+    </section>
+
+    
+        <div class="welcome-text">
+            <h4 style="text-align:center">Enter Location and language to see top 10 developers in the city.</h4>
+        </div>
+    
+
+    <main class="card-container">
+        
+    </main>
+
+    <div class="error"><h3>Sorry boss! No data returned</h3></div>
+
+    
+    
+    
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
